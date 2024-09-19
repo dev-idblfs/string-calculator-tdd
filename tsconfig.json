@@ -4,11 +4,15 @@
         "module": "commonjs",
         "strict": true,
         "outDir": "./dist",
-        "rootDir": "./src",
-        "esModuleInterop": true
+        "rootDir": "/",
+        "esModuleInterop": true,
+        "baseUrl": "./src",
+        "paths": {
+          "@services/*": ["services/*"]
+        }
     },
-    "include": [
-        "src/**/*.ts",
-        "test/**/*.ts"
-    ]
+    // "include": [
+    //     "src/**/*.ts",
+    //     "test/**/*.ts"
+    // ]
 }
